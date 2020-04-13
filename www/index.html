@@ -1,57 +1,427 @@
-<!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
-
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-   <!-- <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />    -->
-    <!-- Good default declaration:
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-        * Enable inline JS: add 'unsafe-inline' to default-src
-        * Enable eval(): add 'unsafe-eval' to default-src
-    * Create your own at http://cspisawesome.com
-    -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- title -->
+    <title>Jamaly</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="template" />
+    <meta name="author" content="spacingtech_webify">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <!-- <link rel="shortcut icon" type="image/favicon" href="image/.png"> -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- animation -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Carjet</title>
+
+    <!-- owl slider -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/thumbnail-slider.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/themify-icons.css">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+
+    <script src="jq/vue.js"></script>
+
+    <link href="jq/lookforward.min.css" rel="stylesheet" />
+    <script src="jq/lookforward.min.js"></script>
+
+
 </head>
+<body class="client-6">
 
-<body>
-    <iframe src="https://dynawix.com/Makeadatestore/" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;background:url(img/loader.gif) center center no-repeat;" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *;" />
 
-  
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-       <script type="text/javascript">	   
-        app.initialize();
-	   </script>
+    <div class="col app-section">
+        <div class="top-client-section">
+
+            <div id="app">
+
+
+                <div class="beauty-slider owl-carousel owl-theme">
+                    <div class="item" style="background-image: url(image/slider1.jpg);">
+                        <span class="top-edit">
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                        </span>
+                    </div>
+                    <div class="item" style="background-image: url(image/slider1.jpg);">
+                        <span class="top-edit">
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                        </span>
+                    </div>
+                    <div class="item" style="background-image: url(image/slider1.jpg);">
+                        <span class="top-edit">
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                        </span>
+                    </div>
+                    <div class="item" style="background-image: url(image/slider1.jpg);">
+                        <span class="top-edit">
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                        </span>
+                    </div>
+                    <div class="item" style="background-image: url(image/slider1.jpg);">
+                        <span class="top-edit">
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="f-full-section">
+                    <div class="f-full-sec-cont">
+                        <div class="f-full-detail">
+                            <div class="f-full-d-img">
+                                <img src="image/find-place-img5.jpg" class="img-fluid" class="find-place-img5">
+                            </div>
+                            <div class="f-full-d-cont">
+                                <span class="edite-option">
+                                    <h6 class="fp-c-title">ملكة الشرق سنتر </h6>
+                                    <a href="#" class="edit-link"><i class="fas fa-edit"></i></a>
+                                </span>
+                                <div class="arrow-set">
+                                    <select class="beauty-center" data-enhanced="false">
+                                        <option>بيوتي سنتر </option>
+                                        <option>بيوتي سنتر </option>
+                                        <option>بيوتي سنتر </option>
+                                        <option>بيوتي سنتر </option>
+                                    </select>
+                                </div>
+                                <div class="fp-d-location">
+                                    <span class="f-d-location-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <input type="text" name="" placeholder="اضف عنوان المشغل ">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="f-full-d-desc">
+                            <p>
+                                مشروع البيوتي سنتر او صالون التجميل الخاص بالسيدات يعد من المشاريع المعروفة والمنتشرة بكثرة في الوقت الحالى وفي الحقيقة هذة المشروع قادر على استقطاب عدد كبير من النساء والفتيات في اى موقع يمكن ان يفتتح بة حيث ان الجمال هو اكبر اهتمامات النساء اينما تواجدوا، ولكن اذا تحدثنا عن المنتجات او الادوات التى تعتمد عليها مشاريع البيوتي سنتر فسنجد انها عبارة عن كريمات وماسكات وصبغات للشعر ومواد اخري من انتاج الشركات التى تقوم بإدخال عناصر كميائية عديدة الى منتجاتها وبالطبع هذة المنتجات تحسن الشكل
+                            </p>
+                        </div>
+                    </div>
+                    <div class="secvice-section">
+                        <div class="section-title">
+                            <div class="secr-ti-edit">
+                                <a href="#" class="edit-link"><i class="fas fa-edit"></i></a>
+                                <h6>الخدمات  </h6>
+                            </div>
+                        </div>
+                        <div class="service-option">
+                            <div class="service-toggle">
+                                <div class="poetry-cont">
+                                    <div class="collapse-link">
+                                        <a class="btn poetry" data-toggle="collapse" href="#poetry">
+                                            قسم رئيسي
+                                            <span class="collapse-box">
+                                                <img src="image/poetry-icon.png">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="collapse" id="poetry">
+                                        <div class="poetry-desc">
+                                            <span class="minus-box">
+                                                <a href="#"><i class="fas fa-minus"></i></a>
+                                            </span>
+                                            <div class="service-co-cont">
+                                                <span class="ser-co-title">تخدمة فرعية </span>
+                                                <div class="sr-rate">
+                                                    <span>00</span>
+                                                    <span>ر.س  </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="poetry-desc">
+                                            <span class="minus-box">
+                                                <a href="#"><i class="fas fa-plus"></i></a>
+                                            </span>
+                                            <div class="service-co-cont">
+                                                <span class="ser-co-title">تاضافة خدمة فرعية </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="poetry-cont">
+                                    <div class="collapse-link">
+                                        <a class="btn add-a-main" data-toggle="collapse" href="#add-a-main">
+                                            قاضافة قسم رئيسي
+                                            <span class="collapse-box">
+                                                <img src="image/poetry-icon.png">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="collapse" id="add-a-main">
+                                        <div class="poetry-desc">
+                                            <span class="minus-box">
+                                                <a href="#"><i class="fas fa-minus"></i></a>
+                                            </span>
+                                            <div class="service-co-cont">
+                                                <span class="ser-co-title">تخدمة فرعية </span>
+                                                <div class="sr-rate">
+                                                    <span>00</span>
+                                                    <span>ر.س  </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="poetry-desc">
+                                            <span class="minus-box">
+                                                <a href="#"><i class="fas fa-plus"></i></a>
+                                            </span>
+                                            <div class="service-co-cont">
+                                                <span class="ser-co-title">تاضافة خدمة فرعية </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-pictures-section">
+                        <div class="pictures-section">
+                            <div class="section-title">
+                                <h6>الصــور </h6>
+                            </div>
+                            <div class="pictures-grid">
+                                <ul class="pict-grid">
+                                    <li class="grid-item">
+                                        <div class="dist-img">
+                                            <img class="img-fluid" src="image/picture-grid4.jpg" alt="picture-grid4">
+                                            <div class="grid-cont">
+                                                <a href="javascript:void(0)" class="grid-cont-title"><i class="fas fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="grid-item">
+                                        <div class="dist-img">
+                                            <img class="img-fluid" src="image/picture-grid1.jpg" alt="picture-grid1">
+                                            <div class="grid-cont">
+                                                <a href="javascript:void(0)" class="grid-cont-title"><i class="fas fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="dist-sub">
+                                            <div class="dist-img">
+                                                <img class="img-fluid" src="image/picture-grid3.jpg" alt="picture-grid3">
+                                                <div class="grid-cont">
+                                                    <a href="javascript:void(0)" class="grid-cont-title"><i class="fas fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="dist-img">
+                                                <img class="img-fluid" src="image/picture-grid2.jpg" alt="picture-grid2">
+                                                <div class="grid-cont">
+                                                    <a href="javascript:void(0)" class="grid-cont-title"><i class="fas fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-times-w">
+                        <div class="times-w-section">
+                            <div class="section-title">
+                                <h6> مواعيد العمل </h6>
+                            </div>
+                            <div class="times-w-cont">
+                                <div class="times-from">
+                                    <span class="from-title">من  </span>
+                                    <span class="arrow-set">
+                                        <select class="times-center">
+                                            <option>8 صباحاً  </option>
+                                            <option>8 صباحاً  </option>
+                                            <option>8 صباحاً  </option>
+                                            <option>8 صباحاً  </option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="times-from">
+                                    <span class="from-title">مالي  </span>
+                                    <span class="arrow-set">
+                                        <select class="times-center">
+                                            <option>10صمساءاً  </option>
+                                            <option>10صمساءاً </option>
+                                            <option>10صمساءاً </option>
+                                            <option>10صمساءاً  </option>
+                                        </select>
+                                    </span>
+                                    <span class="from-sub"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-info-section">
+                        <div class="contact-info-section">
+                            <div class="section-title">
+                                <h6>بيانات التواصل </h6>
+                            </div>
+                            <div class="contact-cont">
+                                <div class="contact-cont-desc">
+                                    <span class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                    <span class="contact-icon-input">
+                                        <input type="text" placeholder="ادخل عنوان المشغل ">
+                                    </span>
+                                </div>
+                                <div class="contact-cont-desc">
+                                    <span class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </span>
+                                    <span class="contact-icon-input">
+                                        <input type="text" placeholder="ادخل رقم المشغل ">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ message }}
+                    <div class="jazz-button">
+                        <a href="#" class="btn">حفـظ </a>
+                    </div>
+                    <div class="cancel-button">
+                        <a href="" class="btn"> الغـاء </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="bottom-tab-style">
+                <ul class="nav nav-pills bottom-tab" role="tablist" id="nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link js-lookforward active" data-toggle="pill" href="index.html" data-transition-enter="slideright" data-transition-leave="slideleft">
+                            <span class="tab-icon"><i class="fas fa-home"></i></span>
+                            <span class="tab-title">الرئيسيه  </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-lookforward" data-toggle="pill" href="Profile.html" data-transition-enter="slideright" data-transition-leave="slideleft">
+                            <span class="tab-icon"><i class="fas fa-user"></i></span>
+                            <span class="tab-title">تخصيص  </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link client-reservation-link js-lookforward" data-toggle="pill" href="Reservations.html" data-transition-enter="slideright" data-transition-leave="slideleft">
+                            <span class="tab-icon"><i class="fas fa-calendar"></i></span>
+                            <span class="tab-title">الحجوزات  </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link setting-link js-lookforward" data-toggle="pill" href="Settings.html" data-transition-enter="slideright" data-transition-leave="slideleft">
+                            <span class="tab-icon"><i class="fas fa-cog"></i></span>
+                            <span class="tab-title">الإعدادات </span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+
+
+
+
+        //$('#nav li a').click(function () {
+        //    // alert('hello there');
+
+        //    var link = $(this).attr('href');
+
+        //    $('#loadme').empty();
+        //    $('#loadme').hide();
+        //    $('#loadme').load(link);
+        //    $('#loadme').animate({ width: 'show' }, 300, 'linear');
+
+
+
+
+        //    //$('#loadme').animate({ width: 'toggle' });;
+
+        //});
+
+
+
+
+
+     
+        new LookForward('.js-lookforward');
+
+
+
+    </script>
+
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!'
+            },
+            methods: {
+
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <!-- copy-right-section end -->
+    <!-- footer section end -->
+    <!-- javascript/jquery files -->
+    <!-- jquery -->
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- masonary -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <!-- owl carousal -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- custom -->
+    <script src="js/custom.js"></script>
+    <script>
+        owl.trigger('refresh.owl.carousel');
+    </script>
+
 
 </body>
-
 </html>
